@@ -21,35 +21,41 @@ h1 {
 }
 
 img {
-  margin: 30px 0;
+  margin-bottom: 30px;
+
 }
 
 .cardContainer {
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
-  background-color: white;
+  background-color: #F0F3F4 ;
   padding: 5px 30px;
   margin: 30px none;
   border-radius: 15px;
-  border: solid gray 5px;
+  border: solid #D0D3D4  5px;
 }
 
 h2 {
   font-size: 3rem;
   margin: -3px;
+  color: #212F3C;
 }
 
 span {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: bold;
+  color: #212F3C;
 }
 
 button {
   width: 400px;
   height: 50px;
+  padding: 5px auto;
   border-radius: 15px;
   font-size: 2rem;
   font-weight: bold;
   margin: 30px 0;
-  border: solid gray 5px;
+  border: solid #D0D3D4  5px;
+  color: #212F3C;
+  background-color: #F0F3F4;
 }

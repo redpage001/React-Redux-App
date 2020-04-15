@@ -6,7 +6,6 @@ import { fetchCard } from "../store/actions/yugiohActions";
 
 const YugiohCard = props => {
     useEffect(() => {
-        // call an action creator
         props.fetchCard();
       }, []);
 
