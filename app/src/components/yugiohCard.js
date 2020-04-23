@@ -5,6 +5,7 @@ import Loader from "react-loader-spinner";
 import { fetchCard } from "../store/actions/yugiohActions";
 
 const YugiohCard = props => {
+    console.log({props})
     useEffect(() => {
         props.fetchCard();
       }, []);
@@ -20,6 +21,10 @@ const YugiohCard = props => {
             <div className="cardContainer">
                 {props.name && <h2>{props.name}</h2>}
                 {props.type && <span>{props.type}</span>}
+                <div className="statContainer">
+                  {props.atk && <p>Atk/ {props.atk}</p>}
+                  {props.def && <p>Def/ {props.def}</p>}
+                </div>
                 {props.desc && <p>{props.desc}</p>}
                 {props.error && <p className="error">{props.error}</p>}
             </div>
@@ -35,6 +40,8 @@ const mapStateToProps = state => {
       image: state.yugiohReducer.image,
       type: state.yugiohReducer.type,
       desc: state.yugiohReducer.desc,
+      atk: state.yugiohReducer.atk,
+      def: state.yugiohReducer.def,
       isFetching: state.yugiohReducer.isFetching,
       error: state.yugiohReducer.error
     };

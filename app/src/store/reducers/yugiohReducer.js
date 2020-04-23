@@ -3,6 +3,8 @@ const initialState = {
   type: "",
   desc: "",
   image: "",
+  atk: "",
+  def: "",
   isFetching: false,
   error: ""
 }
@@ -20,6 +22,8 @@ export const yugiohReducer = (state = initialState, action) => {
               name: action.payload.name,
               type: action.payload.type,
               desc: action.payload.desc,
+              atk: action.payload.atk,
+              def: action.payload.def,
               image: action.payload.card_images[0].image_url,
               isFetching: false,
               error: ""
